@@ -14,7 +14,7 @@ Requirements : Install Pandoc, Latex and Composer on your machine
 (Composer not essential but highly recommended to automate builds)   
 
 Uploaded to this repository will be:
- - All docs relating to deliverables on the report will be in './res/' for reference/guidelines/deadlines and everything the team needs to know
+ - All docs relating to deliverables on the report will be in './resource/' for reference/guidelines/deadlines and everything the team needs to know
  - The report itself, segregated by chapter/section, easy to navigate to the section you wish to update   
  - All necessary configuration files to build the PDF i.e composer.json configs
 
