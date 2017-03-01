@@ -1,0 +1,23 @@
+{
+  "name": "chatbotreport",
+  "version": "1.0.0",
+  "description": "Pandoc report for 3rd year project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pdf": 
+    "pandoc --latex-engine=xelatex -H _config/preamble.tex -V fontsize=10pt -V documentclass:book -V papersize:a4paper -V classoption:openright --number-sections --bibliography=03_references/references.bib 00_front-material/*.md _config/toc.md 01_sections/*/*.md 02_appendices/*.md 03_references/references.md -o ChatBotDevelopment.pdf",
+    "clean":
+    "rm ChatBotDevelopment.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderYoyoS/ChatbotReport.git"
+  },
+  "author": "Daire Homan, Brian Kelly, Aaron Ward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderYoyoS/ChatbotReport/issues"
+  },
+  "homepage": "https://github.com/CoderYoyoS/ChatbotReport#readme"
+}
