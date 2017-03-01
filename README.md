@@ -10,8 +10,8 @@ Report will be written using Pandoc, each section segregated into its own file/f
  Just start getting the ideas flowing, it doesn't have to be perfect
  first time. Write, commit, push and review it together weekly.   
 
-Requirements : Install Pandoc, Latex and Composer on your machine
-(Composer not essential but highly recommended to automate builds)   
+Requirements : Install Pandoc, Latex and NPM on your machine
+(NPM not essential but highly recommended to automate builds)   
 
 Uploaded to this repository will be:
  - All docs relating to deliverables on the report will be in './resource/' for reference/guidelines/deadlines and everything the team needs to know
