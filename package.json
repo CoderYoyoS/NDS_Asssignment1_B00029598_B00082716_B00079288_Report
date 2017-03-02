@@ -4,11 +4,14 @@
   "description": "Pandoc report for 3rd year project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pdf": 
+    "pdfmac": 
     "pandoc --latex-engine=xelatex -H _config/preamble.tex -V fontsize=10pt -V documentclass:book -V papersize:a4paper -V classoption:openright --number-sections --bibliography=03_references/references.bib 00_front-material/*.md _config/toc.md 01_sections/*/*.md 02_appendices/*.md 03_references/references.md -o ChatBotDevelopment.pdf",
-    "clean":
-    "rm ChatBotDevelopment.pdf"
+    "cleanmac":
+    "rm ChatBotDevelopment.pdf",
+    "pdfwin":
+    "javac Build.java && java Build",
+    "cleanwin":
+    "DEL *.class ChatBotDevelopment.pdf"
   },
   "repository": {
     "type": "git",
@@ -21,3 +24,5 @@
   },
   "homepage": "https://github.com/CoderYoyoS/ChatbotReport#readme"
 }
+
+
