@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.Arrays;
 
-
 public class Build {
 
     public static void main(String[] args) throws IOException,Exception {
@@ -48,195 +47,196 @@ public class Build {
         String[] appendicesFileNames = new String[appendicesFiles.length];
         String[] referncesFileNames = new String[referencesFiles.length];
 
-			int i = 0;
-	        for (File file : frontMaterialFiles) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            }
-	            else if(file.isFile()) {
-	                frontMaterialFileNames[i] = file.getCanonicalPath();
-					i++;
-	            }
-	        }
-
-			i = 0;
-	        for (File file : introFiles) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                introFileNames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : lit_review_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                lit_review_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : method_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                method_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : sys_reqs_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                sys_req_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : sys_design_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                sys_design_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : implementation_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                implementation_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : test_eval_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                test_eval_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : conclusion_files) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                conclusion_filenames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : appendicesFiles) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                appendicesFileNames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-			i=0;
-	        for (File file : referencesFiles) {
-	            if (file.isDirectory()) {
-	                System.out.print("Don't create anymore directories in here!!!!");
-	            } else {
-	                referncesFileNames[i] = file.getCanonicalPath();
-	            }
-	            i++;
-	        }
-
-        	String frontmatpaths = "";
-			for(int t = 0; t < frontMaterialFileNames.length; t++){
-				frontmatpaths += frontMaterialFileNames[t]+" ";
-                 
+		int i=0;
+		for (File file : frontMaterialFiles) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
 			}
-
-			String intropaths = "";
-			for(int t = 0; t < introFileNames.length; t++){
-				intropaths += introFileNames[t]+" "; 
+			else if(file.isFile()) {
+				frontMaterialFileNames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String litrevpaths = "";
-			for(int t = 0; t < lit_review_filenames.length; t++){
-				litrevpaths += lit_review_filenames[t]+" "; 
+		i=0;
+		for (File file : introFiles) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				introFileNames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String methodpaths = "";
-			for(int t = 0; t < method_filenames.length; t++){
-				methodpaths += method_filenames[t]+" "; 
+		i=0;
+		for (File file : lit_review_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				lit_review_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String sysreqpaths = "";
-			for(int t = 0; t <  sys_req_filenames.length; t++){
-				sysreqpaths +=  sys_req_filenames[t]+" "; 
+		i=0;
+		for (File file : method_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				method_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String sysdesignpaths = "";
-			for(int t = 0; t < sys_design_filenames.length; t++){
-				sysdesignpaths += sys_design_filenames[t]+" ";
+		i=0;
+		for (File file : sys_reqs_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				sys_req_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String imppaths = "";
-			for(int t = 0; t < implementation_filenames.length; t++){
-				imppaths += implementation_filenames[t]+" "; 
+		i=0;
+		for (File file : sys_design_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				sys_design_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String testevalpaths = "";
-			for(int t = 0; t < test_eval_filenames.length; t++){
-				testevalpaths += test_eval_filenames[t]+" "; 
+		i=0;
+		for (File file : implementation_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				implementation_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String conclusionpaths = "";
-			for(int t = 0; t < conclusion_filenames.length; t++){
-				conclusionpaths += conclusion_filenames[t]+" "; 
+		i=0;
+		for (File file : test_eval_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				test_eval_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-			String appendpaths = "";
-			for(int t = 0; t < appendicesFileNames.length; t++){
-				appendpaths += appendicesFileNames[t]+" "; 
+		i=0;
+		for (File file : conclusion_files) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				conclusion_filenames[i] = file.getCanonicalPath();
+				i++;
 			}
+		}
 
-        // String root = System.getProperty("user.dir");
+		i=0;
+		for (File file : appendicesFiles) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				appendicesFileNames[i] = file.getCanonicalPath();
+				i++;
+			}
+		}
+
+		i=0;
+		for (File file : referencesFiles) {
+			if (file.isDirectory()) {
+				System.out.print("Don't create anymore directories in here!!!!");
+			} else {
+				referncesFileNames[i] = file.getCanonicalPath();
+				i++;
+			}
+		}
+
+		String frontmatpaths = "";
+		for(int t = 0; t < frontMaterialFileNames.length; t++){
+			frontmatpaths += frontMaterialFileNames[t]+" ";
+		}
+
+		String intropaths = "";
+		for(int t = 0; t < introFileNames.length; t++){
+			intropaths += introFileNames[t]+" "; 
+		}
+
+		String litrevpaths = "";
+		for(int t = 0; t < lit_review_filenames.length; t++){
+			litrevpaths += lit_review_filenames[t]+" "; 
+		}
+
+		String methodpaths = "";
+		for(int t = 0; t < method_filenames.length; t++){
+			methodpaths += method_filenames[t]+" "; 
+		}
+
+		String sysreqpaths = "";
+		for(int t = 0; t <  sys_req_filenames.length; t++){
+			sysreqpaths +=  sys_req_filenames[t]+" "; 
+		}
+
+		String sysdesignpaths = "";
+		for(int t = 0; t < sys_design_filenames.length; t++){
+			sysdesignpaths += sys_design_filenames[t]+" ";
+		}
+
+		String imppaths = "";
+		for(int t = 0; t < implementation_filenames.length; t++){
+			imppaths += implementation_filenames[t]+" "; 
+		}
+
+		String testevalpaths = "";
+		for(int t = 0; t < test_eval_filenames.length; t++){
+			testevalpaths += test_eval_filenames[t]+" "; 
+		}
+
+		String conclusionpaths = "";
+		for(int t = 0; t < conclusion_filenames.length; t++){
+			conclusionpaths += conclusion_filenames[t]+" "; 
+		}
+
+		String appendpaths = "";
+		for(int t = 0; t < appendicesFileNames.length; t++){
+			appendpaths += appendicesFileNames[t]+" "; 
+		}
 
         ProcessBuilder builder = new ProcessBuilder(
-            "cmd.exe", "/c"+"pandoc --latex-engine=xelatex -H "+
-            "_config/preamble.tex -V fontsize=10pt -V documentclass:book"+
-            " -V papersize:a4paper -V classoption:openright --number-sections --bibliography=03_references/references.bib "+
-            frontmatpaths+
-            "_config/toc.md "+
-            intropaths+
-            litrevpaths+
-            methodpaths+
-            sysreqpaths+
-            sysdesignpaths+
-            imppaths+
-            testevalpaths+
-            conclusionpaths+
-            appendpaths+
-            "03_references/references.md -o ChatBotDevelopment.pdf"
+				"cmd.exe", "/c"+"pandoc --latex-engine=xelatex -H "+
+				"_config/preamble.tex -V fontsize=10pt -V documentclass:book"+
+				" -V papersize:a4paper -V classoption:openright --number-sections"+
+				" --bibliography=03_references/references.bib "+
+				frontmatpaths+
+				"_config/toc.md "+
+				intropaths+
+				litrevpaths+
+				methodpaths+
+				sysreqpaths+
+				sysdesignpaths+
+				imppaths+
+				testevalpaths+
+				conclusionpaths+
+				appendpaths+
+				"03_references/references.md"+
+				" -o ChatBotDevelopment.pdf"
             );
 
 		builder.redirectErrorStream(true);
-
 		Process p = builder.start();
-
 		BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
-
 		String line;
-
 		while (true) {
-
-		line = r.readLine();
-
-		if (line == null) {
-			break;
+			line = r.readLine();
+			if (line == null) {
+				break;
 		}
-
 		System.out.println(line);
         }
      }
