@@ -1,6 +1,4 @@
-# ChatbotReport
-
-## Year 3 - Major Group Project   
+# NDS - Assignment 1 - Group Chat App  
 
 Daire Homan B00029598   
 Brian Kelly B00082716   
