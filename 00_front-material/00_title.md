@@ -4,7 +4,7 @@
         \vspace*{1cm}
         
 
-       \large{ \textbf{ \uppercase{ChatBot Development}}}
+       \large{ \textbf{ \uppercase{Network Distributed Systems - Assignment 1 - Group Chat Applcation written in Java}}}
         
         \vspace{0.5cm}
         
