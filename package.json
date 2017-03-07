@@ -11,7 +11,7 @@
     "pdfwin":
     "javac Build.java && java Build",
     "cleanwin":
-    "DEL *.class NDS_Asssignment1_B00029598_B00082716_B00079288_Report.pdf.pdf"
+    "DEL *.class NDS_Asssignment1_B00029598_B00082716_B00079288_Report.pdf"
   },
   "repository": {
     "type": "git",
