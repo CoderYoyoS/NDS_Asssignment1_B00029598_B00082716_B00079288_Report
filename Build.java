@@ -215,14 +215,10 @@ public class Build {
 				frontmatpaths+
 				"_config/toc.md "+
 				intropaths+
-
-
 				sysreqpaths+
 				sysdesignpaths+
 				imppaths+
-
 				conclusionpaths+
-
 				"03_references/references.md"+
 				" -o NDS_Asssignment1_B00029598_B00082716_B00079288_Report.pdf"
             );
