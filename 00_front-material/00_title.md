@@ -4,13 +4,13 @@
         \vspace*{1cm}
         
 
-       \large{ \textbf{ \uppercase{Network Distributed Systems - Assignment 1 - Group Chat Applcation written in Java}}}
+       \large{ \textbf{ \uppercase{Network Distributed Systems - Assignment 1 - Group Chat Application written in Java}}}
         
         \vspace{0.5cm}
         
         \vspace{1.5cm}
  
-        Submitted in part fulfilment for the degree of
+        Submitted in part fulfillment for the degree of
         \\
         \large{\textsc{
         B.Sc. in Science in Computing
