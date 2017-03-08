@@ -2,9 +2,11 @@
 
 The TCP(Transmission Control Protocol) protocol and the UDP(User Datagram Protocol) protocol both have strengths and weaknesses when it comes to making communications over a network. This section will explore both the TCP protocol and the UDP protocol to see what the benefits it serves to the proposed application. Finally, a decision will be made as to what protocol will suit the application best for implementation.  
 
-TCP is a transport layer protocol in the OSI layer and is used to create a connection between remote clients("What Is Transmission Control Protocol (TCP)? - Definition From Techopedia"). TCP is a connection oriented protocol and it has has several capabilities. TCP can guarantee that packets arrive at their intended destination and that all packets arrive in the same order in which they were sent. TCP also has flow control whereby two sockets can communicate with each other over a pipe that is individual to the two sockets. 
+TCP is a transport layer protocol in the OSI layer and is used to create a connection between remote clients("What Is Transmission Control Protocol (TCP)? - Definition From Techopedia"). TCP is a connection oriented protocol and it has has several capabilities. TCP can guarantee that packets arrive at their intended destination and that all packets arrive in the same order in which they were sent. TCP is ideal for applications that require high reliability and transmission time is relatively less critical ("TCP Vs UDP - Difference And Comparison"). TCP also has flow control whereby two sockets can communicate with each other over a pipe that is individual to the two sockets. 
 
-__(I'm not finished here going to add the UDP stuff and then finish off with the reason we chose TCP)__ 
+UDP is also a transport layer protocol. However, it is not a connection based protocol, in comparison to the TCP protocol. The UDP protocol allows packets to be sent to any destination and once the packet arrives that is the end of the relationship. UDP is ideal for applications that need fast, efficient transmission, suc as games. It is also ideal for servers that answer small queries from huge numbers of clients("TCP Vs UDP - Difference And Comparison"). However, UDP, unlike TCP, has no flow control. Because packets are sent individually there is no guarantee that they will arrive at their destination in the order in which they are dispatched. 
+
+
 
 Insert empty line at end of section
 
