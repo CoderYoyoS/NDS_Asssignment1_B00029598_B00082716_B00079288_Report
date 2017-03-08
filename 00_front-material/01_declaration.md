@@ -1,5 +1,5 @@
-\frontmatter 
-\chapter{Declaration}
+\frontmatter
+\chapter*{Declaration}
 
  I herby certify that this material, which I now submit for assessment on the programme of study leading to the award of
  Degree of B.Sc. in Science in Computing
@@ -17,3 +17,4 @@ Signed:________________________		Dated: ____/_____/_____
 Signed:________________________		Dated: ____/_____/_____
 
 \thispagestyle{empty}
+
