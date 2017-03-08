@@ -19,7 +19,7 @@ of the server name and port number to connect to the server.
         Socket client = new Socket(serverName, port);
 ```
 Then the socket class attempts to connect the client to the server. Once connected, the client 
-is not able to the server through the server object.
+is now able to the server through the server object.
 In step five the the accept method on the server returns a reference to the new socket to the clients 
 socket. 
 Then communication is available between the server and the client using I/O streams. Each socket is given
