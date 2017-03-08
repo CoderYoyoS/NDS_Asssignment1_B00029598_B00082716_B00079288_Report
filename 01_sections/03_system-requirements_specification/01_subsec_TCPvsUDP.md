@@ -6,7 +6,6 @@ TCP is a transport layer protocol in the OSI layer and is used to create a conne
 
 UDP is also a transport layer protocol. However, it is not a connection based protocol, in comparison to the TCP protocol. The UDP protocol allows packets to be sent to any destination and once the packet arrives that is the end of the relationship. UDP is ideal for applications that need fast, efficient transmission, suc as games. It is also ideal for servers that answer small queries from huge numbers of clients("TCP Vs UDP - Difference And Comparison"). However, UDP, unlike TCP, has no flow control. Because packets are sent individually there is no guarantee that they will arrive at their destination in the order in which they are dispatched. 
 
-
 Considering both protocols capabilities, the TCP protocol seems best suited for implementation of this particular application. Whilst they both have strengths and weaknesses, TCP's guarantee of packets reaching their destination and the enforced order in which they arrive make it ideal for a chat application. Though UDP is a faster protocol, the tradeoff of transmission time versus reliability seems to be one worth while for the implementation of this project. 
 Insert empty line at end of section
 
