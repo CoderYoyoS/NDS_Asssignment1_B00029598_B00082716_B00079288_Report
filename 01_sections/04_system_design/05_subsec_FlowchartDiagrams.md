@@ -1,0 +1,6 @@
+## Flow Chart Diagrams
+
+The use of flow charts during the development of the software provide a range of benefits. Flow chart diagrams provide visual clarity to fellow developers during the implementation process and give a mental picture of how the software should work. Each process or decision in the flow chart provides the team members with milestones that should be tackled in order to achieve the end product. Each problem is broken into multiple parts and makes it easier for the team to envision the end goal, in turn, making the development process more efficient and effective.
+
+The following flow chart diagram explains the usual interaction a user may have the the software. Initially the program is ran by starting the server and client, establishing a connection. The user may choose to enter their own username that will be seen by the other clients or they may choose an anonymous username, which is assigned to them by the program. Upon successful login, the user is then enabled to interact with other client that are connected. Messages can be send by the user to other clients until the user has decided to disconnect. Following the disconnection from the server, the user is logged out and their client window is closed. 
+![Flowchart Image. \label{Flowchart}](04_assets/04_system_design/FlowchartDiagrams/FlowChartDiagram.jpg)
