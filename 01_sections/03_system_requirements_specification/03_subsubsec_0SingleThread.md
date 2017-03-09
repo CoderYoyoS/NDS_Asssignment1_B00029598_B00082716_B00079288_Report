@@ -1,6 +1,8 @@
 ### Single-Threaded Approach
 
-A single-threaded implementation can be easily constructed and it will serve it's purpose up until the program needs to handle multiple clients. Because a thread is a single path of execution there is a consistent need to execute the program in a loop which can be expensive to performance, throughput and I/O. So when implementing a single threaded server, a loop has to be executed that constantly listens to incoming connection requests and also has the job of processing them. Below is pseudocode to demonstrate what happens when this design is implemented.       
+<<<<<<< HEAD
+A single-threaded implementation can be easily constructed and it will serve its purpose up until the program needs to handle multiple clients. Because a thread is a single path of execution there is a consistent need to execute the program in a loop which can be expensive to performance, throughput and I/O. When implementing a single threaded server, a loop must be executed that constantly listens to incoming connection requests and also has the job of processing them. Below is pseudocode to demonstrate what happens when this design is implemented.      
+
 \vspace*{\fill}   
 ```
 StartServerOnPortAndRunAThread()
