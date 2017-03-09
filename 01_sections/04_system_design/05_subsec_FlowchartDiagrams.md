@@ -1,3 +1,4 @@
+
 ## Flow Chart Diagrams
 
 The use of flow charts during the development of the software provide a range of benefits. Flow chart diagrams provide visual clarity to fellow developers during the implementation process and give a mental picture of how the software should work. Each process or decision in the flow chart provides the team members with milestones that should be tackled in order to achieve the end product. Each problem is broken into multiple parts and makes it easier for the team to envision the end goal, in turn, making the development process more efficient and effective.
