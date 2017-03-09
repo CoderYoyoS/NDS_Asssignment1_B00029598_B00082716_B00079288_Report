@@ -5,11 +5,11 @@ public class Build {
 
     public static void main(String[] args) throws IOException,Exception {
 
-        File frontMaterial = new File(System.getProperty("user.dir")+"/00_front-material");
+        File frontMaterial = new File(System.getProperty("user.dir")+"/00_front_material");
         File introduction = new File(System.getProperty("user.dir")+"/01_sections/00_introduction");
         // File lit_review = new File(System.getProperty("user.dir")+"/01_sections/01_literature_review");
         // File method = new File(System.getProperty("user.dir")+"/01_sections/02_method");
-        File system_reqs = new File(System.getProperty("user.dir")+"/01_sections/03_system-requirements_specification");
+        File system_reqs = new File(System.getProperty("user.dir")+"/01_sections/03_system_requirements_specification");
         File sys_design = new File(System.getProperty("user.dir")+"/01_sections/04_system_design");
         File implementation = new File(System.getProperty("user.dir")+"/01_sections/05_implementation");
         // File test_eval = new File(System.getProperty("user.dir")+"/01_sections/06_testing_evaluation");
