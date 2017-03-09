@@ -11,11 +11,6 @@
         topPanel.setBorder(BorderFactory.createMatteBorder(2, 2, 2, 2, (new Color(224, 3, 69))));
         ImageIcon iconLogo = new ImageIcon("images/logo.jpg");
 
-<<<<<<< HEAD
-
->>>>>>> 0b90342c34382750f9933c425412195d3cdc1573
-=======
->>>>>>> 083602b7bd5e2db5c8fb5cbd1189b624b5cd05b1
         JLabel logo = new JLabel(iconLogo);
         topPanel.add(logo, BorderLayout.CENTER);
         return topPanel;
