@@ -7,20 +7,17 @@ Now that the client and the server are interacting in the correct manor, the GUI
 
       private JPanel getTopPanel() {
         JPanel topPanel = new JPanel(new BorderLayout());
-
         topPanel.setPreferredSize(new Dimension(0, 105));
-
         topPanel.setBackground(new Color(13, 101, 253));
-
         topPanel.setBorder(BorderFactory.createMatteBorder(2, 2, 2, 2, (new Color(224, 3, 69))));
-
         ImageIcon iconLogo = new ImageIcon("images/logo.jpg");
+<<<<<<< HEAD
 >>>>>>> 633052bcca4a3c0c8367c12e11b327dd05d927b1
 
+=======
+>>>>>>> ff66a1fbb684ec349f4bf0e432f5756efc971836
         JLabel logo = new JLabel(iconLogo);
-
         topPanel.add(logo, BorderLayout.CENTER);
-
         return topPanel;
     }
 ```
