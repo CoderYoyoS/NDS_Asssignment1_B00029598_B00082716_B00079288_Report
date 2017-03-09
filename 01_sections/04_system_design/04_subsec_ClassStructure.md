@@ -1,3 +1,3 @@
-## Class Diagrams
+## Class Structure
 In order to structure the system in an effective way, class diagrams have been designed to provide an overview of how the system will operate. Ideally, to provide a better layer of scalability,  the system should be designed in a way whereby the GUI's are segmented from the  logical implementation of the server and the client. However, because of the scope of this project and the requirement to demonstrate proper usage of a transmission protocol using Java, both the server and the client, both GUI's and logic, are implemented with one file each, ```Server.java``` and ```Client.java```. 
 
