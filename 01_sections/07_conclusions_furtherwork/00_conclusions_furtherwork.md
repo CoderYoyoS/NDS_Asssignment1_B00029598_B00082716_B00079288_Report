@@ -1,4 +1,4 @@
-# Further Work and Conclusion
+# Conclusion and Further Work
 
 ## Further Work
 While the implementation of this chat application was successful, a more appropriate way to implement this program would be to allow users to communicate over different hosts. However this was outside the scope of the project. Moreover, additional features can be equipped to enhance the users experience and the overall application. A database that can store, update and interact with data can be integrated to facilitate a number of other features. For example allowing users to create and updated their own individual accounts, upload profile pictures and see their chat history. An interface can be developed to allow a user to sign up for or into their pre-existing account. Furthermore other features such as allowing the user to send pictures, sounds and other files over the chat application can be incorporated to add another layer of depth and usability.
