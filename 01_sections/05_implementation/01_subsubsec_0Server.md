@@ -1,10 +1,11 @@
 ### Server Implementation
 
-The core operations implemented into the server program where the following:   
+The core operations implemented into the server program are the following:   
 - Start the server on a thread and get it to listen to connection requests from clients.   
 - Accept the client connection.   
 - Extract the message from the clients output.   
 - Create a new thread to process the clients output.  
+- Redistribute message received to all clients.   
 
 See below code snippet to see how this was achieved.   
 
@@ -34,12 +35,34 @@ Server.java code snippet
 ```   
 \vspace*{\fill}   
 
+The redistribution of messages is achieved by running the below code:   
+
+\vspace*{\fill}   
+
+```   
+    public void sendToAll(String message) {
+		Iterator iterator = connections.iterator();
+        while (iterator.hasNext()) {
+            try {
+                PrintWriter writer = (PrintWriter) iterator.next();
+                writer.println(message);
+                writer.flush();
+            } catch (Exception error) {
+            }
+        }
+    }
+
+```   
+
+
 The `Server.java` program is subclassed with the `ClientHandler` thread class that runs the thread for processing the clients output. Whilst processing a message from the client, the primary purpose of `ClientHandler` is to:   
  - Extract the output.   
 - Determine wether the transmission was a new connection, a disconnection or a chat message.   
 
 This is necessary for outputting to the server log(more on this in the Controller subsection) what is happening at that specific moment in time in the system. See below code snippet of how the `ClientHandler` subclass was implemented.   
-\vspace*{\fill}  
+
+  
+
 ```   
  public ClientHandler(Socket clientSocket, PrintWriter user) {
             client = user;
@@ -51,15 +74,12 @@ This is necessary for outputting to the server log(more on this in the Controlle
                 serverLogBoard.setText("Unexpected error. \n");
             }
         }
-
         public void run() {
             String message, connectKey = "Connect", disconnectKey = "Disconnect", chatKey = "Chat";
             String[] messageData;
-
             try {
                 while ((message = reader.readLine()) != null) {
                     messageData = message.split(":");
-
                     if (messageData[2].equals(connectKey)) {
                         sb.append(messageData[0]  + " has entered the chat "+ "<br><br>");
                         serverLogBoard.setText(sb.toString());
@@ -78,12 +98,11 @@ This is necessary for outputting to the server log(more on this in the Controlle
                     }
                 }
             } catch (Exception ex) {
-
                ex.printStackTrace();
             }
         }
 ```
-\vspace*{\fill}  
+
 
 
 
