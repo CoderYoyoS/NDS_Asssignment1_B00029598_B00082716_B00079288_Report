@@ -1,6 +1,6 @@
 ### Multi-Threaded Approach
 
-As seen with the single-threaded design, when a server has to handle multiple clients and requests the system can become more susceptible to error and/or failure. Multi-threading the application provides a solution to this problem. As has been aforementioned, from a higher-level oversight, the program has two core operations that encompass its functionality, making a connection and processing the request. The single-threaded model handles both operations in one thread and the multi-threaded model handles both operations in thread independent to itself. See below pseudocode to demonstrate how this would work.   
+As seen with the single-threaded design, when a server has to handle multiple clients and requests the system can become more susceptible to error and/or failure. Multi-threading the application provides a solution to this problem. As has been aforementioned, from a higher-level oversight, the program has two core operations that encompass its functionality, making a connection and processing the request. The single-threaded model handles both operations in one thread and the multi-threaded model handles both operations in a thread independent to itself. See below pseudocode to demonstrate how this would work.   
 \vspace*{\fill}   
 ```
         StartServerOnPortAndRunAThread()   
