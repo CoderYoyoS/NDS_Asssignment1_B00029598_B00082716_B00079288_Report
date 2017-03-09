@@ -1,4 +1,5 @@
 # System Design
+<<<<<<< HEAD
 
 ##GUI Design
 During the design process for both the client and the server GUI's there was a priority on making both the designs similar in order  to give the overall application a uniform look and feel. Furthermore, during the deliberation of both UI's, a particular emphasis was given to creating simple and easy to use interfaces. Both the client and server design will be discussed separately below in order to give a more detailed description.
@@ -13,3 +14,5 @@ When designing the UI for the server, there was a focus put on mirroring the lay
 
 ![Mockup Image of Server UI. \label{figure 2}](04_assets/04_system_design/serverGUIDesign.PNG){width=60% height=60%} 
 
+=======
+>>>>>>> 415ac0b8daa8902d22709afe3006ad24f66f8160
