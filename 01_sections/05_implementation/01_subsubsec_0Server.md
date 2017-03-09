@@ -57,8 +57,7 @@ The redistribution of messages is achieved by running the below code:
 
 
 The `Server.java` program is subclassed with the `ClientHandler` thread class that runs the thread for processing the clients output. Whilst processing a message from the client, the primary purpose of `ClientHandler` is to:   
-
- - Extract the output.   
+- Extract the output.   
 - Determine whether the transmission was a new connection, a disconnection or a chat message.   
 
 This is necessary for outputting to the server log(more on this in the Controller subsection) what is happening at that specific moment in time in the system. See below code snippet of how the `ClientHandler` subclass was implemented.   
