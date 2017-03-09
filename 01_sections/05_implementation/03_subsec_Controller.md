@@ -3,12 +3,10 @@ The controller dictates the behaviour of the application based on user-inputs. F
 
 ```
 if (sendEvent.getSource() == connectButton && !userLoginInput.getText().toString().equals("")) {
-
             if (isConnected == false) {
                 userName = userLoginInput.getText();
                 userLoginInput.setEditable(false);
                 super.setTitle(userName+" Chat Window");
-
                 try {
                     socket = new Socket(address, port);
                     InputStreamReader streamreader = new InputStreamReader(socket.getInputStream());
@@ -22,8 +20,8 @@ if (sendEvent.getSource() == connectButton && !userLoginInput.getText().toString
                     JOptionPane.showMessageDialog(null, "Cannot Connect Please try again");
                     userLoginInput.setEditable(true);
                 }
-
                 Thread IncomingReader = new Thread(new IncomingReader());
                 IncomingReader.start();
             }
-```
+```   
+

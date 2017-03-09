@@ -1,12 +1,11 @@
 ### Server Implementation
 
-<<<<<<< HEAD
+
 The core operations implemented into the server program are as follows:   
 - Start the server on a thread and listen to connection requests from clients.   
-=======
+
 The core operations implemented into the server program are the following:   
 - Start the server on a thread and get it to listen to connection requests from clients.   
->>>>>>> 0b90342c34382750f9933c425412195d3cdc1573
 - Accept the client connection.   
 - Extract the message from the clients output.   
 - Create a new thread to process the clients output.  
@@ -47,7 +46,7 @@ The ```Server.java``` program is sub-classed with the ```ClientHandler``` thread
 
 This is necessary for outputting to the server log (more on this in the Controller subsection) what is happening at that specific moment in time in the system. See below code snippet of how the ```ClientHandler``` subclass was implemented.   
 \vspace*{\fill}  
-=======
+
 
 The redistribution of messages is achieved by running the below code:   
 

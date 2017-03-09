@@ -7,6 +7,6 @@ The server UML class diagram consists of a ```Server``` class that extends the J
  ![Server Class Diagram. \label{Server}](04_assets/04_system_design/ClassDiagrams/ServerClass-Diagram.jpg)
 
 ### Client
-Secondly, the ```Client``` also extends the java ```JFrame``` class to provide a graphical interface. The ```ActionListener``` interface is implemented to allow client interaction. Attributes such as a port number, socket, and address are declared initially in the program. Multiple methods implementations are used to provide graphical look-and-feel within the program. The class also runs a separate class called ```IncomingReader``` which runsa thread to listen and handle any messages  being redistributed from the server sent to the client. 
+Secondly, the ```Client``` also extends the java ```JFrame``` class to provide a graphical interface. The ```ActionListener``` interface is implemented to allow client interaction. Attributes such as a port number, socket, and address are declared initially in the program. Multiple methods implementations are used to provide graphical look-and-feel within the program. The class also runs a separate class called ```IncomingReader``` which runs a thread to listen and handle any messages  being redistributed from the server sent to the client. 
 
  ![Client Class Diagram. \label{Client}](04_assets/04_system_design/ClassDiagrams/ClientClass-Diagram.jpg)
