@@ -8,9 +8,10 @@ In the design process  of the client GUI specific attention was paid to creating
 
 ![Mockup Image of Client UI. \label{figure 1}](04_assets/04_system_design/clientGUIDesign.PNG){width=60% height=60%}
 
-## GUI Design server
+## GUI Design Server
 When designing the UI for the server, there was a focus put on mirroring the layout and structure of the client design as mentioned previously. In addition, the server interface was designed in a clear and concise manner in order for it to be easy to not only keep track of who is using the application but also to see each user that has entered into the chat group. 
 
 ![Mockup Image of Server UI. \label{figure 2}](04_assets/04_system_design/serverGUIDesign.PNG){width=60% height=60%} 
 
-
+## Class Diagrams
+In order to structure the system in an effective way, class diagrams have been designed to provide an overview of how the system will operate. Ideally, to provide a better layer of scalability,  the system should be designed in a way whereby the GUI's are segmented from the  logical implementation of the server and the client. However, because of the scope of this project and the requirement to demonstrate proper usage of a transmission protocol using Java, both the server and the client, both GUI's and logic, are implemented with one file each, ```Server.java``` and ```Client.java```. 
