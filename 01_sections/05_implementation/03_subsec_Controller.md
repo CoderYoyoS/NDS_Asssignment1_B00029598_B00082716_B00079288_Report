@@ -25,3 +25,9 @@ if (sendEvent.getSource() == connectButton && !userLoginInput.getText().toString
             }
 ```   
 
+See below screenshot of when a client instantiates a connection to the chat and when a client sends a message.      
+
+![When user has connected. \label{figure 1}](04_assets/05_implementation/userLogin.PNG){width=60% height=60%}    
+
+![When user has sent message. \label{figure 1}](04_assets/05_implementation/userMessage.PNG){width=60% height=60%}  
+
