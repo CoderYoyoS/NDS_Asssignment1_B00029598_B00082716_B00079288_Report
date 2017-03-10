@@ -5,7 +5,7 @@ The core operations implemented into the server program are as follows:
 - Accept the client connection.   
 - Extract the message from the clients output.   
 - Create a new thread to process the clients output.  
-- Redistribute message received to all clients.   
+- Redistribute messages received back out to all clients.   
 
 See below code snippet to see how this was achieved.   
 

@@ -8,7 +8,7 @@ One of the core logical operations that the client performs is instantiating a c
 
 ```   
 public void actionPerformed(ActionEvent sendEvent) {
-        if (sendEvent.getSource() == connectButton && !userLoginInput.getText().toString().equals("")) {
+        if (sendEvent.getSource() == connectButton && !userLoginInput.equals("")) {
             if (isConnected == false) {
                 userName = userLoginInput.getText();
                 userLoginInput.setEditable(false);
@@ -41,7 +41,8 @@ The client then must create a new thread to listen to incoming messages from the
     public class IncomingReader implements Runnable {
         public void run() {
             String[] messageData;
-            String stream, doneKey = "Done", connectKey = "Connect", disconnectKey = "Disconnect", chatKey = "Chat";
+            String stream, doneKey = "Done", connectKey = "Connect",
+             disconnectKey = "Disconnect", chatKey = "Chat";
 
             try {
                 while ((stream = reader.readLine()) != null) {
